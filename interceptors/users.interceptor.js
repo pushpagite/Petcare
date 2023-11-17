@@ -27,13 +27,13 @@ function loginUser(req, res, next) {
   }
 }
 
-function sendOtp(req, res, next) {
-  let mobileNumber = req.body.mobileNumber;
-  if (mobileNumber && mobileNumber !== "") {
-    next();
-  } else {
-    res.send({
-      message: "Required field/s missing.",
-    });
-  }
-}
+// function sendOtp(req, res, next) {
+//   let mobileNumber = req.body.mobileNumber;
+//   if (mobileNumber && mobileNumber !== "") {
+//     next();
+//   } else {
+//     res.send({
+//       message: "Required field/s missing.",
+//     });
+//   }
+// }
